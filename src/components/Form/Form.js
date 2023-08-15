@@ -4,7 +4,7 @@ import InputLabel from "../InputLabel/InputLabel"
 import OptionList from "../OptionList"
 import Button from "../Button"
 
-const Form = () => {
+const Form = (props) => {
 
 
     const [nombre, actualizarNombre] = useState('')
@@ -52,6 +52,7 @@ const Form = () => {
             <OptionList 
                 valor={equipo}
                 actualizarValor={actualizarEquipo}
+                equipos={props.equipos}
                 />
             <Button>
                 Crear
