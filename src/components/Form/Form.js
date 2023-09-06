@@ -11,6 +11,8 @@ const Form = (props) => {
     const [puesto, actualizarPuesto] = useState('')
     const [foto, actualizarFoto] = useState('')
     const [equipo, actualizarEquipo] = useState('')
+
+    const {registrarColaborador} = props
     
 
     const manejarEnvio = (e) => {
@@ -22,7 +24,7 @@ const Form = (props) => {
             equipo
         }
 
-        console.log(datosAEnviar);
+        registrarColaborador(datosAEnviar);
     }
 
     return <section className="formulario">

@@ -9,7 +9,7 @@ function InputLabel(props) {
 
     const manejarCambio = (e) => {
         console.log("cambio", e.target.value);
-        props.actulizarValor(e.target.value)
+        props.actualizarValor(e.target.value)
     }
 
 
